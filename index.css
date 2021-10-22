@@ -1,34 +1,40 @@
-.container{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-areas: 
-    "sidebar sidebar sidebar sidebar"
-    "header header header header"
-    "main main main main"
-    "main main footer footer";
+body{
+  background-image: linear-gradient(to right, #8fb7a9, #43554f);
+  color: rgb(255, 255, 255);
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
 }
-.global_menu{
-    background-color: gray;
-    overflow: hidden;
+.specifik{
+  background-color: rgb(182, 182, 163);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.global_menu{   /*This is the design and code for the global menu navigation bar*/
+  background-image: linear-gradient(to right, #44564f, #1f2824); /*This makes the navigation bar dark green*/
+  overflow: hidden;
+  position:sticky;
+  top:0;
+  transition: 
+    width      0.5s,
 }
 .global_menu a {
   float: left;
-  color: goldenrod;
+  color: whitesmoke;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 30px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 /* Change the color of links on hover */
 .global_menu a:hover {
   background-color: white;
   color: black;
+  width: 300px;
 }
 
 /* Add a color to the active/current link */
 .global_menu a.active {
-  background-color: #04AA6D;
+  background-color: rgb(68, 79, 58);
   color: white;
 }
