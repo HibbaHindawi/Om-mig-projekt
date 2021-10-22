@@ -4,6 +4,20 @@ body{
   font-family: "Lucida Console", "Courier New", monospace;
   text-align: center;
 }
+h1{
+  font-size: 60px;
+}
+
+.ul{
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 25px;
+  border-color: rgb(159, 159, 144);
+  background-color: rgb(159, 159, 144);
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
 .specifik{
   background-color: rgb(182, 182, 163);
   max-width: 1000px;
@@ -37,4 +51,18 @@ body{
 .global_menu a.active {
   background-color: rgb(68, 79, 58);
   color: white;
+}
+.Teknikum{
+  width: 700px;
+  height: 300px;
+}
+
+.skola{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.schema{
+  width: 700px;
+  height: 300px;
 }
