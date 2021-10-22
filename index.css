@@ -1,0 +1,34 @@
+.container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "sidebar sidebar sidebar sidebar"
+    "header header header header"
+    "main main main main"
+    "main main footer footer";
+}
+.global_menu{
+    background-color: gray;
+    overflow: hidden;
+}
+.global_menu a {
+  float: left;
+  color: goldenrod;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.global_menu a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.global_menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
