@@ -66,3 +66,8 @@ h1{
   width: 700px;
   height: 300px;
 }
+
+.indented{
+  font-size: x-small;
+  max-width: 400px;
+}
