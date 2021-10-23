@@ -70,4 +70,5 @@ h1{
 .indented{
   font-size: x-small;
   max-width: 400px;
+  list-style-type: none;
 }
