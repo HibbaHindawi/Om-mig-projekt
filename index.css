@@ -19,8 +19,8 @@ p{
   background-color: rgb(182, 182, 163);
   max-width: 1000px;
   margin: 0 auto;
-  padding-bottom: 10px;
-  padding-top: 3em;
+  padding-bottom: 2px;
+  padding-top: 2em;
 }
 .global_menu{   /*This is the design and code for the global menu navigation bar*/
   background-image: linear-gradient(to right, #44564f, #1f2824); /*This makes the navigation bar dark green*/
@@ -102,4 +102,35 @@ a{
   max-width: 500px;
   margin: 0 auto;
   text-align: left;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+.footer{
+  color: rgb(228, 228, 228);
+  max-width: 500px;
+  border-style:solid;
+  border-width: 10px;
+  background-color: rgb(159, 159, 144);
+  border-color: rgb(159, 159, 144);
+  border-radius: 10px;
+}
+table{
+  margin: 0 auto;
+  border: 1px solid black;
+}
+th,td{
+  width: 100px;
+  height: 50px;
+}
+th{
+  background-color: #bdc9c1;
+  
 }
