@@ -7,70 +7,86 @@
 </head>
 <body>
     <header class="global_menu"> <!--skapar en global meny-->
-        <a href="Hibba_Hindawi.html">Hibba Hindawi</a> <!--skapar tre linkar som är linkad till css-->
+        <a href="Hibba_Hindawi.html">Hibba Hindawi</a> <!--skapar länk som är linkad till css-->
         <a class="active" href="Mina_Intressen.html">Mina Intressen</a>
         <a href="Mina_projekt.html">Mina Projekt</a>
     </header>
     <main class="specifik">
         <h1>Mina Intressen</h1> <!--skapar en rubrik-->
-        <div>
-            <h2>Programmering</h2>
-            <p>Jag gillar att programmera, jag har gjort det förrut och tycker fortfarande att det är roligt. Mitt första programmeringspråk var <strong>Lua och Javascript</strong>, Lua var ganska lätt för mig men Javascript förstod jag inte så mycket förrut. Efter jag började tvåan i Teknikum så har jag lärt mig <strong>Javascript, CSS, HTML, C++, C#</strong> och flera andra saker om programmering. Just nu försöker jag använda mina kunskaper till att skapa olika saker, jag testar också runt med olika commandblock.</p>
+        <div> <!--Innehåller coden för Programmering rubriken-->
+            <h2>Programmering</h2> <!--skapar en underrubrik-->
+            <p>Jag gillar att programmera, jag har gjort det förrut och tycker fortfarande att det är roligt. Mitt första programmeringspråk var <strong>Lua och Javascript</strong>, Lua var ganska lätt för mig men Javascript förstod jag inte så mycket förrut. Efter jag började tvåan i Teknikum så har jag lärt mig <strong>Javascript, CSS, HTML, C++, C#</strong><!--Gör den markerade texten till fetstil--> och flera andra saker om programmering. Just nu försöker jag använda mina kunskaper till att skapa olika saker, jag testar också runt med olika commandblock.</p>
         </div>
-        <div>    
+        <div> <!--Innehåller coden för spel rubriken-->  
             <h2>Spel</h2>
-            <p>Jag gillar att spela flera spel i olika genrer, den bästa genren är kreativitet och öppen värld genrer. Jag känner som att de ger mig frihet och kontroll över spel världen, jag älskar också att bygga väldigt mycket så spel som inkluderar stadbyggare eller bara något man kan bygga själv med är väldigt roligt.</p>
+            <p>Jag gillar att spela flera spel i olika genrer, den bästa genren är kreativitet och öppen värld genrer. Jag känner som att de ger mig frihet och kontroll över spel världen, jag älskar också att bygga väldigt mycket så spel som inkluderar stadbyggare eller bara något man kan bygga själv med är väldigt roligt.</p> <!--skapar en paragraf för normal text-->
             <p>Det finns flera olika spel jag tycker om, det inkluderar: <strong>City Skylines, Left 4 Dead 2, Killing Floor 2, Sims 3 & 4, Dead By Daylight, Slime Rancher, Minecraft, We Happy Few, Payday 2, Dead Rising 1-4,</strong> och flera andra. Jag älskar dessa spelen inte bara för att de är roliga utan för att de ger mig fri kontroll utav vad jag kan göra, några av dessa spelen är mer skjutar spel men jag tycker om de också.</p>
             <p>Jag gillar att spela med mina vänner flesta av tiden när det går eftersom vi kan samarbeta för att klara spelet, och ibland kan det vara mer roligt eftersom det finns spel där man måste samarbeta och ibland går det ganska dåligt för att det är svårt. <strong>Overcooked 1 och 2</strong> är ett exempel, <strong>Moving Out</strong> också.</p>
             <p>Jag brukade spela väldigt mycket förut men eftersom jag knappast har någon tid längre så kan jag inte spela, och så har jag inget intresse längre i några spel.</p>
         </div>
-        <div>
+        <div><!--Innehåller coden för Böcker och Serier rubriken-->
             <h2>Böcker och Serier</h2>
-            <p>Jag gillar att läsa och kolla på olika serier, det distraherar mig lite från nuvarande tiden och låter mig komma in i min egen lilla värld där jag tänker på vad jag vill. Jag har läst väldigt många olika serier och det fanns många som jag tyckte om men också många som inte var så bra. Mesta av dessa serier är Manga och Anime ibland så är det också korta romaner.</p>
-            <table>
-                <tr>
-                    <th colspan="2">Namn</th>
-                    <th>Typ</th>
-                    <th>Genre</th>
-                    <th>Beskrivning</th>
-                    <th>Poäng</th>
-                </tr>
-                <tr>
+            <p>Jag gillar att läsa och kolla på olika serier, det distraherar mig lite från nuvarande tiden och låter mig komma in i min egen lilla värld där jag tänker på vad jag vill. Jag har läst väldigt många olika serier och det fanns många som jag tyckte om men också många som inte var så bra. Mesta av dessa serier är Manga och Anime ibland så är det också korta romaner. Jag älskar att läsa serier som har action, komedi, mysteri och lite fantasi, det får mig att tänka mycket och hjälper mig vara kreativ.</p>
+            <table> <!--Skapar en Tabell-->
+                <tr> <!--Skapar en rad med columner-->
+                    <th colspan="2">Namn</th> <!--skapar en cell i en column och är två celler lång-->
+                    <th>Typ</th><!--skapar en cell i en column-->
+                    <th>Genre</th><!--skapar en cell i en column-->
+                    <th>Beskrivning</th><!--skapar en cell i en column-->
+                    <th>Poäng</th><!--skapar en cell i en column column-->
+                </tr> <!--Stänger raden-->
+                <tr> <!--skapar en ny rad och koden innuti gör samma sak-->
+                    <td><img class="series" src="images/Dorohedoro.jpeg" alt="Dorohedoro"></td> <!--Gör en cell med en bild innuti som är länkad till CSS kod-->
                     <td>Dorohedoro</td>
                     <td>Manga</td>
-                    <td>Action Komedi Fantasi Skräck</td>
+                    <td class="description">Action Komedi Fantasi Skräck</td>
                     <td class="description">Berättelsen handlar om den minneslösa Caiman, som arbetar med sin vän Nikaido för att återställa sina minnen.</td>
                     <td><strong>10/10</strong></td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td><img class="series" src="images/Kimetsu.jpeg" alt="Kimetsu"></td>
+                    <td>Kimetsu No Yaiba</td>
                     <td>Manga</td>
-                    <td></td>
-                    <td class="description"></td>
+                    <td class="description">Action Övernaturligt</td>
+                    <td class="description"> I en värld med demoner finner du Tanjiro som försöker rädda sin syster efter att hon har blivit en demon, han möter flera utmaningar före han kan rädda henne.</td>
+                    <td><strong>9/10</strong></td>
+                </tr>
+                <tr>
+                    <td><img class="series" src="images/Rokka.jpeg" alt="Rokka"></td>
+                    <td>Rokka No Yuusha</td>
+                    <td>Roman</td>
+                    <td class="description">Action Äventyr Fantasy Mysterium</td>
+                    <td class="description">Berättelsen följer Adlet Mayer som försöker bli en modig för att kämpa mot demonguden, på vägen dit möter han flera olika farliga äventyr och utmaningar.</td>
                     <td><strong>10/10</strong></td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td><img class="series" src="images/Jibaku.jpeg" alt="Jibaku"></td>
+                    <td>Jibaku Shounen Hanako-kun</td>
                     <td>Manga</td>
-                    <td></td>
-                    <td class="description"></td>
+                    <td class="description">Övernaturligt</td>
+                    <td class="description">En spöke fastbunden till badrummet möter en tjej som heter Yashiro, tillsammans löser de mysteriet om hur spöken kom till skolan.</td>
                     <td><strong>10/10</strong></td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td><img class="series" src="images/Pandora.jpeg" alt="Pandora"></td>
+                    <td>Pandora Hearts</td>
                     <td>Manga</td>
-                    <td></td>
-                    <td class="description"></td>
-                    <td><strong>10/10</strong></td>
+                    <td class="description">Äventyr Fantasy Mysterium Övernaturligt</td>
+                    <td class="description">I en värld med magi och demoner möter vi Oz som faller ner i en hemlig värld där han möter en flicka som heter Alice, tillsammans med henne möter han olika fiender och försöker få reda på vad det är som händer</td>
+                    <td><strong>9/10</strong></td>
+                </tr>
+                <tr>
+                    <td><img class="series" src="images/Tokyo.jpeg" alt="Tokyo"></td>
+                    <td>Tokyo卍Revengers</td>
+                    <td>Manga</td>
+                    <td class="description">Action</td>
+                    <td class="description">Berättelsen följer Takemichi som kan resa fram och tillbaka i tiden, med hjälp av sina krafter går han 12 år tillbaks i tiden för att rädda sin flickvän. Han möter flera olika personer och går med i en grupp där han måste tänka smart för att överleva.</td>
+                    <td><strong>8/10</strong></td>
                 </tr>
             </table>
         </div>
-        <div>
-            <h2>Matlagning och bakelser</h2>
-            <p></p>
-        </div>
         <div>   
-            <p class="next"><a href="Mina_projekt.html">Nästa Sida</a></p>
+            <p class="next"><a href="Mina_projekt.html">Nästa Sida</a></p> <!--skapar en link som tar dig till html filen Mina_projekt.html och är kopplad med css kod-->
         </div>
     </main>
     <footer class="specifik">

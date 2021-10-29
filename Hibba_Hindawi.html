@@ -1,19 +1,19 @@
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-   <link rel="stylesheet" href="index.css">
-    <title>Hibba Hindawi</title>
+<!DOCTYPE html> <!--specifierar vilken version av html vi ska använda-->
+<html lang="sv"> <!--specifierar språket på webbsidan-->
+<head> <!--Skapar en behållare för metadata (data om data) Metadata visas inte och definierar vanligtvis dokumentets titel, teckenuppsättning, stilar, skript och annan metainformation.-->
+    <meta charset="UTF-8"> <!--Gör så att programmet identifierar teckenkoding-->
+   <link rel="stylesheet" href="index.css"> <!--linkar html filen med css filen-->
+    <title>Hibba Hindawi</title> <!--gör titeln för sidan till Hibba Hindawi-->
 </head>
-<body>
-    <header class="global_menu"> <!--skapar en global meny-->
+<body> <!--Definierar huvudinnehållet i HTML-dokumentet eller avsnittet i HTML-dokumentet som kommer att vara direkt synligt på webbsidan. All "main" kod ska vara här-->
+    <header class="global_menu"> <!--en sidhuvud som innerhåller den globala menyn-->
         <a class="active" href="Hibba_Hindawi.html">Hibba Hindawi</a> <!--skapar tre linkar som är linkad till css, denna specifika länken har en active knapp vilket innebär att den är speciell för att det är sidan som är öppen just nu-->
         <a href="Mina_Intressen.html">Mina Intressen</a>
-        <a href="Mina_Intressen.html">Mina Projekt</a>
+        <a href="Mina_projekt.html">Mina Projekt</a>
     </header>
-    <main class="specifik">
+    <main class="specifik"> <!--ett område för vanliga texter som till exempel paragrafer-->
         <h1>Hibba Hindawi</h1> <!--Skapar en huvudrubrik-->
-        <div> <!--Innehåller all kod för "Allmän Information" rubriken-->
+        <div> <!--Innehåller all kod för "Allmän Information" rubriken, div har ingen speciell mening men jag använder det för att dela upp saker-->
             <h2>Allmän Information</h2> <!--Skapar en underrubrik-->
             <p>Jag heter Hibba Hindawi och jag är en flicka som är född 2004, 26 Juli. Jag har flera intressen och gillar att göra olika saker som att till exempel bygga saker och att vara kreativ. Jag försöker också göra några projekt med hjälp av mina kunskaper från min nurvarande skola Teknikum</p> <!--Skapar en paragraf där man kan skriva huvud texten i-->
         </div>
@@ -66,7 +66,7 @@
                 </ul>
             </div>
             <h3>Mitt Schema:</h3> <!--Skapar en underrubrik till en h2:a-->
-            <img class="schema" src="schema.png" alt="schema"> <!--Skapar en bild-->
+            <img class="Teknikum" src="images/schema.png" alt="schema"> <!--Skapar en bild-->
             <p>När jag kommer hem så brukar jag antingen jobba med mina uppgifter eller så testar jag runt mig lite i programmering för att se vad jag kan göra. Än så länge har jag lyckats göra två saker helt själv, en egen webbsida som är mer ett skämt än en webbsida, och ett gissa tal spel där programmet väljer ett tal mellan 1 och 100, som användaren måste gissa.</p>
         </div>
         <div> <!--Innehåller kod för "Information om mig och min familj" rubriken-->
@@ -76,14 +76,14 @@
         <div> <!--Innehåller kod för "Teknikum" rubriken-->
             <h2><a href="https://www.vaxjo.se/sidor/forskola-och-skola/gymnasieskola/teknikum.html">Teknikum</a></h2> <!--Skapar en knapp som tar dig till Teknikum's webbsida-->
             <p>Detta är min skola, jag har inte gått här ganska länge men jag trivs väldigt bra här.</p>
-            <a href="https://www.vaxjo.se/sidor/forskola-och-skola/gymnasieskola/teknikum.html"><img class="Teknikum" src="Teknikum.jpeg" alt="Teknikum"></a> <!--Skapar en bild som är länkad till teknikum's webbsida-->
+            <a href="https://www.vaxjo.se/sidor/forskola-och-skola/gymnasieskola/teknikum.html"><img class="Teknikum" src="images/Teknikum.jpeg" alt="Teknikum"></a> <!--Skapar en bild som är länkad till teknikum's webbsida-->
         </div>
         <div> <!--Kod för "Nästa Sida" knappen-->
             <p class="next"><a href="Mina_Intressen.html">Nästa Sida</a></p> <!--Skapar en knapp som tar dig till en annan sida-->
         </div>
     </main>
-    <footer class="specifik">
-        <p class="footer">Hibba Hindawi, TE20A Teknikum</p>
+    <footer class="specifik"> <!--en sidfot-->
+        <p class="footer">Hibba Hindawi, TE20A Teknikum</p> <!--lägger text i sidfoten-->
     </footer>
 </body>
 </html>

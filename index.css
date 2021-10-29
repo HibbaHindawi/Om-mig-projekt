@@ -38,14 +38,12 @@ p{
   text-decoration: none;
   font-size: 20px;
 }
-
 /* Change the color of links on hover */
 .global_menu a:hover {
   background-color: white;
   color: black;
-  width: 300px;
+  width: 200px;
 }
-
 /* Add a color to the active/current link */
 .global_menu a.active {
   background-color: rgb(68, 79, 58);
@@ -55,12 +53,6 @@ p{
   width: 700px;
   height: 300px;
 }
-
-.schema{
-  width: 700px;
-  height: 300px;
-}
-
 .indented{
   font-size: x-small;
   max-width: 400px;
@@ -92,7 +84,6 @@ a{
   margin: 0 auto;
   border-radius: 10px;
 }
-
 .ul{
   border-width: 5px;
   border-style: solid;
@@ -103,7 +94,6 @@ a{
   margin: 0 auto;
   text-align: left;
 }
-
 .container{
   display: grid;
   grid-template-columns: auto;
@@ -132,8 +122,20 @@ th,td{
   height: 50px;
 }
 th{
-  background-color: #a4aca7;
+  background-color: #4d6155;
 }
 .description{
   font-size: x-small;
+}
+.series{
+  width: 70px;
+  height: 100px;
+}
+tr:nth-child(odd){
+  background-image:linear-gradient(to right, rgb(183, 213, 205), rgb(91, 131, 127));
+  color: white;
+}
+tr:nth-child(even){
+  background-image:linear-gradient(to right, rgb(189, 166, 203),rgb(138, 78, 138));
+  color: white;
 }
