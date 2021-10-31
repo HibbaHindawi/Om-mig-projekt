@@ -139,3 +139,28 @@ tr:nth-child(even){
   background-image:linear-gradient(to right, rgb(189, 166, 203),rgb(138, 78, 138));
   color: white;
 }
+.projekt{
+  width: 450px;
+  height: 300px;
+  margin-left: 6em;
+  margin-bottom: 2em;
+}
+.yes{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.förklaring{
+  margin-right: 6em;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+.yes1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.förklaring1{
+  margin-right: 6em;
+  margin-left: 2em;
+  margin-top: 4em;
+}
