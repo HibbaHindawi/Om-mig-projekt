@@ -1,19 +1,19 @@
-body{
-  background-image: linear-gradient(to right, #8fb7a9, #43554f);
-  color: rgb(255, 255, 255);
-  font-family: "Lucida Console", "Courier New", monospace;
-  text-align: center;
-  margin: 0;
+body{ /*Gör ändringar till alla element under body taggen*/
+  background-image: linear-gradient(to right, #8fb7a9, #43554f); /*Ändrar bakgrundsbilden/färgen till två olika färger och lägger en effekt på den så att ena färgen blir mörkare och mörkare tills den blir till den andra färgen*/
+  color: rgb(255, 255, 255); /*Ändrar färg på texten och gör texten vitt*/
+  font-family: "Lucida Console", "Courier New", monospace; /*Ändrar fonten på texten*/
+  text-align: center; /*Lägger texten i mitten av dokumentet eller speciferad område*/
+  margin: 0; /*Gör margin till 0 för att ta bort mellanrum*/
 }
 h1{
-  font-size: 60px;
-  margin-top: 0;
+  font-size: 60px; /*Ändrar text storleken till 60 pixlar*/
+  margin-top: 0; /*Tar bort top-delen av margin från huvudrubriken för att ta bort mellanrummet*/
 }
 p{
-  max-width: 750px;
-  margin: 0 auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  max-width: 750px; /**/
+  margin: 0 auto; /*Centrerar paragraf taggar*/
+  margin-top: 1em; /**/
+  margin-bottom: 1em; /**/
 }
 .specifik{
   background-color: rgb(182, 182, 163);
@@ -23,7 +23,7 @@ p{
   padding-top: 2em;
 }
 .global_menu{   /*This is the design and code for the global menu navigation bar*/
-  background-image: linear-gradient(to right, #44564f, #1f2824); /*This makes the navigation bar dark green*/
+  background-image: linear-gradient(to right, #44564f, #1f2824);
   overflow: hidden;
   position:sticky;
   top:0;
