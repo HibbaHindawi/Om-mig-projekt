@@ -5,70 +5,67 @@ body{ /*Gör ändringar till alla element under body taggen*/
   text-align: center; /*Lägger texten i mitten av dokumentet eller speciferad område*/
   margin: 0; /*Gör margin till 0 för att ta bort mellanrum*/
 }
-h1{
+h1{ /*Ändrar innehållet för h1 element*/
   font-size: 60px; /*Ändrar text storleken till 60 pixlar*/
-  margin-top: 0; /*Tar bort top-delen av margin från huvudrubriken för att ta bort mellanrummet*/
+  margin-top: 0; /*Tar bort övre-delen av margin från huvudrubriken för att ta bort mellanrummet*/
 }
-p{
-  max-width: 750px; /**/
+p{ /*Gör ändringar till alla P taggar*/
+  max-width: 750px; /*Begränsar innehållsbredden till 750px*/
   margin: 0 auto; /*Centrerar paragraf taggar*/
-  margin-top: 1em; /**/
-  margin-bottom: 1em; /**/
+  margin-top: 1em; /*ändrar övre-delen av margin till 1em*/
+  margin-bottom: 1em; /*Gör samma sak som margin-top men gör det på botten*/
 }
-.specifik{
-  background-color: rgb(182, 182, 163);
+.specifik{ /*skapar en klass som används i några taggar*/
+  background-color: rgb(182, 182, 163); /*Ändrar bakgrundsfärgen för taggarna som har klassen "specifik"*/
   max-width: 1000px;
   margin: 0 auto;
-  padding-bottom: 2px;
-  padding-top: 2em;
+  padding-bottom: 2px; /*Skapar utrymme under elementet*/
+  padding-top: 2em; /*Skapar utrymme ovanför elementet*/
 }
-.global_menu{   /*This is the design and code for the global menu navigation bar*/
+.global_menu{   /*Klassen som innehåller global menyn*/
   background-image: linear-gradient(to right, #44564f, #1f2824);
-  overflow: hidden;
-  position:sticky;
-  top:0;
+  overflow: hidden; /*Överflödet klipps, och resten av innehållet kommer att vara osynligt*/
+  position:sticky; /*Global menyn följer med när du skrollar när på sidan*/
+  top:0; /*Lägger global menyn på översta delan av sidan och stannar där*/
 }
-.global_menu a {
-  float: left;
+.global_menu a { /*Ändrar innehållet för varje a-tagg under taggen med klassen "global_menu"*/
+  float: left; /*Placerar ett element på vänster sidan av dess behållare*/
   color: whitesmoke;
   text-align: center;
-  padding:20px 30px;
-  text-decoration: none;
+  padding:20px 30px; /*Används för att skapa utrymme runt ett elements innehåll*/
+  text-decoration: none; /*Används för att ta bort sträcken under länkar*/
   font-size: 20px;
 }
-/* Change the color of links on hover */
-.global_menu a:hover {
+.global_menu a:hover { /*Ändrar innehållet för när en a-tagg har muspekaren på sig*/
   background-color: white;
   color: black;
-  width: 200px;
+  width: 200px; /*Ändrar storlek på bordern/padding arean och gör det större*/
 }
-/* Add a color to the active/current link */
-.global_menu a.active {
+.global_menu a.active { /*Ändrar innehållet för varje a-tagg som har klassen "active" under klassen "global_menu"*/
   background-color: rgb(68, 79, 58);
   color: white;
 }
 .Teknikum{
   width: 700px;
-  height: 300px;
+  height: 300px; /*Ändrar storleken på bilden*/
 }
 .indented{
   font-size: x-small;
   max-width: 400px;
-  list-style-type: none;
+  list-style-type: none; /*Listan blir ospecifierad och får ingen punkt vid sidan*/
 }
 .next{
-  border-style:solid;
-  border-width: 1px;
+  border-style:solid; /*Gör så att bordern visar en enda rak, heldragen linje*/
+  border-width: 1px; /*Ändrar border storlek till 1px*/
   background-color: rgb(159, 159, 144);
-  border-color:rgb(182, 182, 163);
+  border-color:rgb(182, 182, 163); /*Gör border färgen*/
   max-width: 150px;
   text-align: center;
   font-size: larger;
-  margin: 2em auto 0 auto;
-  border-radius: 10px;
+  margin: 2em auto 0 auto; /*2em ändrar överdelen, auto gör så att vänster och höger får sina värden från datorn, och 0 tar bort under delen av margin*/
+  border-radius: 10px; /*Bordern får rundade kanter*/
 }
-
-a{
+a{ /*Ändrar innehållet för länkar*/
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -93,13 +90,13 @@ a{
   text-align: left;
 }
 .container{
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 25% 25% 25% 25%;
-  grid-template-areas: 
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
+  display: grid; /*Används för att dela upp en sida i större regioner, som man senare namnger och sätter position på*/
+  grid-template-columns: auto; /*Skapar alla kolumner automatiskt*/
+  grid-template-rows: 25% 25% 25% 25%; /*Dividerar alla rader i 4 och gör de alla samma storlek*/
+  grid-template-areas: /*Definerar vilket innehåll ska vart*/
+    "header header header header" /*Huvudmenyn sätts på toppen*/
+    "main main main main" /*Huvuddelen sätts i mitten*/
+    "footer footer footer footer"; /*Sidfoten sätts i slutet*/
 }
 .footer{
   color: rgb(228, 228, 228);
@@ -110,10 +107,10 @@ a{
   border-color: rgb(182, 182, 163);
   border-radius: 10px;
 }
-table, th, td{
+table, th, td{ /*Ändrar innehållet för Tabellen, Rubrikerna och Cellerna*/
   margin: 0 auto;
   border: 1px solid black;
-  border-collapse: collapse;
+  border-collapse: collapse; /*Kollapsar alla tabellerna och sammanfogar ihop de till en enda tabell*/
 }
 th,td{
   width: 100px;
@@ -129,11 +126,11 @@ th{
   width: 70px;
   height: 100px;
 }
-tr:nth-child(odd){
+tr:nth-child(odd){ /*Ändrar innehållet för varje udda tr i tabellen*/
   background-image:linear-gradient(to right, rgb(183, 213, 205), rgb(91, 131, 127));
   color: white;
 }
-tr:nth-child(even){
+tr:nth-child(even){ /*Ändrar innehållet för varje jämn tr i tabellen*/
   background-image:linear-gradient(to right, rgb(189, 166, 203),rgb(138, 78, 138));
   color: white;
 }
@@ -145,7 +142,7 @@ tr:nth-child(even){
 }
 .yes{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /*Specifierar hur kolumnerna i griden ska se ut, och används för att lägga två element precis bredvid varandra*/
 }
 .förklaring{
   margin-right: 6em;
@@ -155,7 +152,7 @@ tr:nth-child(even){
 .yes1{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; /*Gör samma sak som grid-template-columns men gör det för raderna istället*/
 }
 .förklaring1{
   margin-right: 6em;
